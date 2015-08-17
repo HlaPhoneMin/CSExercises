@@ -10,7 +10,12 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            Double UserInput, Square;
+            Console.Write("Enter a number : ");
+            UserInput = double.Parse(Console.ReadLine());
+            Square = Math.Pow(UserInput, 2);
+            Console.WriteLine("Square of your entered number : " + Square);
+            Console.ReadLine(); 
         }
     }
 }
