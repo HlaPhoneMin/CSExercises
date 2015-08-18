@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double TemperatureInCentigrate, TemperatureInFahrenheit;
-            
+             
             Console.Write("Enter the temperature in Centigrate : ");
             TemperatureInCentigrate = Convert.ToDouble(Console.ReadLine());
             

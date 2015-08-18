@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double X1, Y1, X2, Y2, Distance;
-            
+             
             Console.Write("Enter the coordinate for x1 : ");
             X1 = Convert.ToDouble(Console.ReadLine());
             

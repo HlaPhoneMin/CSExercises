@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double UserInput, Output;
-            
+             
             Console.Write("Enter the number : ");
             UserInput = Convert.ToDouble(Console.ReadLine());
             

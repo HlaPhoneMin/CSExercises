@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double TotalFare, Distance;
-
+             
             Console.Write("Enter the distance you want to travel : ");
             Distance = Convert.ToDouble(Console.ReadLine());
             

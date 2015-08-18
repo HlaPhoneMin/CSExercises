@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double Salary, HousingAllowance, TransportAllowance;
-            
+             
             Console.Write("Enter your Salary : ");
             Salary = Convert.ToDouble(Console.ReadLine());
 
