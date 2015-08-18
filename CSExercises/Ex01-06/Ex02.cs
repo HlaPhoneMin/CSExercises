@@ -10,13 +10,19 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            String UserInput; int Number, Square;
+            string UserInput; int Number, Square;
+            
             Console.Write("Enter a number : ");
             UserInput = Console.ReadLine();
+            
             Number = Convert.ToInt32(UserInput);
+            
             Square = Number * Number;
+            
             Console.WriteLine("Square of your entered number : " + Square);
+            
             Console.ReadLine();
+        
         }
     }
 }

@@ -11,8 +11,10 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             int Mark;
+            
             Console.Write("Enter your mark : ");
             Mark = Convert.ToInt32(Console.ReadLine());
+            
             if (Mark < 100 && Mark >79)
             {
                 Console.WriteLine("Your Grade is A");
@@ -33,7 +35,9 @@ namespace CSExercises
             {
                 Console.WriteLine("**Error**");
             }
+            
             Console.ReadLine();
+
         }
     }
 }

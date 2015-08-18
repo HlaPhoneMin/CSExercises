@@ -10,34 +10,47 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            double TVQuantity, DVDQuantity, MP3Quantity, TVPrice, DVDPrice, MP3Price, TotalPrice;
+            double TvQuantity, DvdQuantity, Mp3Quantity, TvPrice, DvdPrice, Mp3Price, TvDiscount, DvdDiscount,TotalPrice;
+
             Console.Write("Enter quantity for TV : ");
-            TVQuantity = Convert.ToDouble(Console.ReadLine());
+            TvQuantity = Convert.ToDouble(Console.ReadLine());
+            
             Console.Write("Enter quantity for DVD : ");
-            DVDQuantity = Convert.ToDouble(Console.ReadLine());
+            DvdQuantity = Convert.ToDouble(Console.ReadLine());
+            
             Console.Write("Enter quantity for MP3 : ");
-            MP3Quantity = Convert.ToDouble(Console.ReadLine());
-            TVPrice = TVQuantity * 900;
-            DVDPrice = DVDQuantity * 500;
-            MP3Price = MP3Quantity * 700;
-            if (TVPrice > 5000 && TVPrice < 10000)
+            Mp3Quantity = Convert.ToDouble(Console.ReadLine());
+            
+            TvPrice = TvQuantity * 900;
+            DvdPrice = DvdQuantity * 500;
+            Mp3Price = Mp3Quantity * 700;
+            
+            if (TvPrice > 5000 && TvPrice < 10000)
             {
-                TVPrice *= 10 / 100;
+                TvDiscount = TvPrice * 10 / 100;
+                TvPrice -= TvDiscount;
             }
-            else if (TVPrice > 10000)
+            else if (TvPrice > 10000)
             {
-                TVPrice *= 15 / 100;
+                TvDiscount = TvPrice * 15 / 100;
+                TvPrice -= TvDiscount;
             }
-            if (DVDPrice > 5000 && DVDPrice < 10000)
+            
+            if (DvdPrice > 5000 && DvdPrice < 10000)
             {
-                TVPrice *= 10 / 100;
+                DvdDiscount = DvdPrice * 10 / 100;
+                DvdPrice -= DvdDiscount;
             }
-            else if (DVDPrice > 10000)
+            else if (DvdPrice > 10000)
             {
-                TVPrice *= 15 / 100;
+                DvdDiscount = DvdPrice * 15 / 100;
+                DvdPrice -= DvdDiscount;
             }
-            TotalPrice = TVPrice + DVDPrice + MP3Price;
+
+            TotalPrice = TvPrice + DvdPrice + Mp3Price;
+            
             Console.WriteLine("Total price for this order is ${0}", TotalPrice);
+            
             Console.ReadLine();
         }
     }

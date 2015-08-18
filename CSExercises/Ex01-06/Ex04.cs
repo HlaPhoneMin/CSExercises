@@ -10,13 +10,17 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Double UserInput, SquareRoot;
+            double UserInput, SquareRoot;
+            
             Console.Write("Enter a number : ");
             UserInput = double.Parse(Console.ReadLine());
+            
             SquareRoot = Math.Sqrt(UserInput);
 
             Console.WriteLine("Square Root of your entered number : " + SquareRoot);
+            
             Console.ReadLine();
+        
         }
     }
 }
