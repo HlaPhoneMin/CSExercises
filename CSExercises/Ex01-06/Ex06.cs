@@ -9,7 +9,7 @@ namespace CSExercises
     public class Ex06
     {
         public static void Main(string[] args)
-        {
+        { 
             double UserInput; int SquareRoot;
             
             Console.Write("Enter a number : ");
