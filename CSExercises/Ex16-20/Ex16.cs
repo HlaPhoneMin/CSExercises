@@ -9,7 +9,7 @@ namespace CSExercises
     public class Ex16
     {
         public static void Main(string[] args)
-        {
+        { 
             string Name, Gender;
 
             Console.Write("Enter your name : ");

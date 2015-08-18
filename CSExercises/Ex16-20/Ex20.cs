@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CSExercises
 {
     public class Ex20
-    {
+    { 
         public static void Main(string[] args)
         {
             double TvQuantity, DvdQuantity, Mp3Quantity, TvPrice, DvdPrice, Mp3Price, TvDiscount, DvdDiscount,TotalPrice;
