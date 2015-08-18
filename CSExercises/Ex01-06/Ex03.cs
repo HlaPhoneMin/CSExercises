@@ -11,7 +11,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double UserInput, Square;
-            
+             
             Console.Write("Enter a number : ");
             UserInput = double.Parse(Console.ReadLine());
             
